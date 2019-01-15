@@ -16,11 +16,11 @@ public class Zadatak1kreiranjeTabela {
             // create our data-source for the database
             connectionSource = new JdbcConnectionSource("jdbc:sqlite:avionRoba.db");
 
-            //TableUtils.dropTable(connectionSource, Avion.class,true);
-            //TableUtils.dropTable(connectionSource, Roba.class,true);
+            TableUtils.dropTable(connectionSource, Roba.class,true);
+            TableUtils.dropTable(connectionSource, Avion.class,true);
 
-            //TableUtils.createTable(connectionSource, Avion.class);
-           // TableUtils.createTable(connectionSource,Roba.class);
+            TableUtils.createTable(connectionSource, Avion.class);
+            TableUtils.createTable(connectionSource,Roba.class);
 
         }catch (Exception e) {
             e.printStackTrace();
