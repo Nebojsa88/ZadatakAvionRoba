@@ -12,8 +12,10 @@ import java.io.IOException;
 import java.util.List;
 
 public class Zadatak2dodavanjeVrednosti {
+
     static Dao<Avion,Integer> avionDao;
     static Dao<Roba,Integer> robaDao;
+
     public static void main(String[] args) {
         ConnectionSource connectionSource = null;
 
